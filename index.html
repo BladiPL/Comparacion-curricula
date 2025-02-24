@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación curricular </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        .border-left {
+            border-left: 4px solid black;
+            /* Cambia el valor del grosor y color según lo necesites */
+            padding-left: 10px;
+            /* Ajusta el padding para que no se vea tan pegado */
+        }
+
+        .border-right {
+            border-right: 4px solid black;
+            padding-right: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            /* Color de fondo verde */
+            border: none;
+            /* Sin borde */
+            color: white;
+            /* Texto en blanco */
+            padding: 15px 32px;
+            /* Espaciado interior */
+            text-align: center;
+            /* Alineación centrada del texto */
+            text-decoration: none;
+            /* Sin subrayado */
+            display: inline-block;
+            /* Mostrar en línea */
+            font-size: 16px;
+            /* Tamaño de fuente */
+            margin: 10px 2px;
+            /* Margen alrededor del botón */
+            cursor: pointer;
+            /* Cambiar el cursor a pointer */
+            border-radius: 8px;
+            /* Bordes redondeados */
+            transition-duration: 0.4s;
+            /* Transición suave */
+        }
+
+        button:hover {
+            background-color: white;
+            /* Cambiar el color de fondo al pasar el mouse */
+            color: black;
+            /* Cambiar el color del texto al pasar el mouse */
+            border: 2px solid #4CAF50;
+            /* Agregar un borde verde */
+        }
+
+        .dual-header {
+            display: flex;
+            justify-content: space-around;
+            /* Distribuir los elementos a los extremos */
+            /* Espaciado inferior */
+        }
+
+        .dual-header .left,
+        .dual-header .right,
+        .dual-header .medium {
+            /* Ocupan cada uno 50% del ancho */
+            text-align: center;
+            /* Centrar el texto */
+            font-weight: bold;
+        }
+
+
+        .result-cell.equal {
+            background-color: #d4edda;
+            /* Verde claro */
+            color: #155724;
+            /* Texto verde oscuro */
+        }
+
+        .result-cell.different {
+            background-color: #f8d7da;
+            /* Rojo claro */
+            color: #721c24;
+            /* Texto rojo oscuro */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Comparación Planes de Estudio <br> Diseño Curricular 2021 - 2025</h1>
+    <div id="result">
+        <h2 style="text-align: center;">Programa de estudios <br> NUTRICION HUMANA </h2>
+        <button onclick="compareCurriculas()">Comparar Curriculas</button>
+        <button onclick="compareWithOTI()">Comparar con OTI</button>
+        <h3 class="dual-header">
+            <div class="left">GESTION CURRICULAR</div>
+            <div class="medium">SISTEMA ACADEMICO OTI</div>
+            <!--<div class="right">FORMATO C1 - SUNEDU</div>-->
+        </h3>
+        <table id="comparison-table">
+            <thead>
+                <tr>    
+                    <th class="border-left">Ciclo</th>
+                    <th>Área Curricular</th>
+                    <th>Código</th>
+                    <th>Curso</th>
+                    <th>HT</th>
+                    <th>HP</th>
+                    <th>TH</th>
+                    <th>Créditos</th>
+                    <th>Horas Virtuales</th>
+                    <th>Prerrequisitos</th>
+
+                    <th class="border-left">Ciclo</th>
+                    <th>Área Curricular</th>
+                    <th>Código</th>
+                    <th>Curso</th>
+                    <th>HT</th>
+                    <th>HP</th>
+                    <th>TH</th>
+                    <th>Créditos</th>
+                    <th>Prerrequisitos</th>
+<!--
+                    <th class="border-left">Ciclo</th>
+                    <th>Curso</th>
+                    <th>HT</th>
+                    <th>HP</th>
+                    <th>TH</th>
+                    <th>Créditos</th>
+-->
+                    <th class="border-left border-right">Resultado</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+        async function compareCurriculas() {
+            const response = await fetch('http://localhost:3000/compare-curriculas');
+            const data = await response.json();
+
+            if (response.ok) {
+                displayComparison(data);
+            } else {
+                console.error('Error en la respuesta del servidor:', data.error);
+                alert('Error al comparar curriculas: ' + data.error);
+            }
+        }
+
+        async function compareWithOTI() {
+            const response = await fetch('http://localhost:3000/convert-csv');
+            const data = await response.json();
+
+            if (response.ok) {
+                displayComparison(data);
+            } else {
+                console.error('Error en la respuesta del servidor:', data.error);
+                alert('Error al comparar curriculas: ' + data.error);
+            }
+        }
+
+
+        function displayComparison(comparisonData) {
+            const table = document.getElementById('comparison-table').querySelector('tbody');
+            table.innerHTML = '';
+
+            comparisonData.forEach(curso => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="border-left">${curso.ciclo1 || ''}</td>
+                    <td>${curso.areac1 || ''}</td>
+                    <td>${curso.codigo1 || ''}</td>
+                    <td>${curso.nombre1 || ''}</td>
+                    <td>${curso.ht1 || ''}</td>
+                    <td>${curso.hp1 || ''}</td>
+                    <td>${curso.th1 || ''}</td>
+                    <td>${curso.creditos1 || ''}</td>
+                    <td>${curso.hv1 || ''}</td>
+                    <td>${curso.pre1 || ''}</td>
+
+                    <td class="border-left">${curso.ciclo3 || ''}</td>
+                    <td>${curso.areac3}</td>
+                    <td>${curso.codigo3 || ''}</td>
+                    <td>${curso.nombre3 || ''}</td>
+                    <td>${curso.ht3 || ''}</td>
+                    <td>${curso.hp3 || ''}</td>
+                    <td>${curso.th3 || ''}</td>
+                    <td>${curso.creditos3 || ''}</td>
+                    <td>${curso.pre3 || ''}</td>
+                    <!--
+                    <td class="border-left">${curso.ciclo3 || ''}</td>
+                    <td>${curso.nombre3 || ''}</td>
+                    <td>${curso.ht3 || ''}</td>
+                    <td>${curso.hp3 || ''}</td>
+                    <td>${curso.th3 || ''}</td>
+                    <td>${curso.creditos3 || ''}</td>
+                    -->
+        
+                    <td class="border-left border-right result-cell">${curso.result}</td>
+                `;
+                table.appendChild(row);
+
+                // Aplicar clases de color después de agregar la fila
+                const resultCell = row.querySelector('.result-cell');
+                if (resultCell.textContent.trim() === 'Igual') {
+                    resultCell.classList.add('equal');
+                } else {
+                    resultCell.classList.add('different');
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>

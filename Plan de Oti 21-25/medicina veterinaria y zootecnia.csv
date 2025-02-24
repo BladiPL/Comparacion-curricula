@@ -1,0 +1,88 @@
+﻿N;CODIGO;CICLO;CURSO;ESP;HT;HP;TH;CRD;REQUE
+1;EG101;I;Comprensión y Argumentación;0;3;2;5;4;NINGUNO
+2;EG102;I;Pensamiento Racional y Ética;0;2;2;4;3;NINGUNO
+3;EG103;I;Matemática Básica;0;3;2;5;4;NINGUNO
+4;EG104;I;Taller de Innovación y Emprendimiento;0;2;2;4;3;NINGUNO
+5;EG105;I;Ecología y Desarrollo Sostenible;0;2;2;4;3;NINGUNO
+6;EG113;I;Biología General;0;3;2;5;4;NINGUNO
+7;MVZ201;I;Tópicos de Producción y Salud Animal;0;1;2;3;2;NINGUNO
+8;EG106;II;Producción de Textos Académicos;0;2;2;4;3;NINGUNO
+9;EG114;II;Estrategias de Aprendizaje;0;2;2;4;3;NINGUNO
+10;MVZ202;II;Biología Molecular y Biotecnología;0;2;2;4;3;EG113
+11;MVZ203;II;Anatomía Veterinaria I;0;3;2;5;4;NINGUNO
+12;MVZ204;II;Realidad Nacional y Políticas Agrarias;0;1;2;3;2;MVZ201
+13;MVZ205;II;Histología Veterinaria;0;3;2;5;4;EG113
+14;MVZ206;II;Bioquímica;0;3;2;5;4;NINGUNO
+15;EG115;III;Desarrollo Personal;0;2;2;4;3;NINGUNO
+16;MVZ207;III;Fisiología Veterinaria I;0;3;2;5;4;MVZ203
+17;MVZ208;III;Anatomía Veterinaria II;0;3;2;5;4;MVZ203
+18;MVZ209;III;Parasitología Veterinaria I;0;3;2;5;4;MVZ201
+19;MVZ210;III;Microbiología Veterinaria I;0;3;2;5;4;MVZ201
+20;MVZ211;III;Bioestadística Descriptiva;0;3;2;5;4;NINGUNO
+21;EG107;IV;Epistemología;0;2;2;4;3;NINGUNO
+22;EG118;IV;Identidad y Diversidad Cultural;0;2;2;4;3;NINGUNO
+23;MVZ212;IV;Fisiología Veterinaria II;0;3;2;5;4;MVZ207
+24;MVZ213;IV;Parasitología Veterinaria II;0;3;2;5;4;MVZ209
+25;MVZ214;IV;Microbiología Veterinaria II;0;3;2;5;4;MVZ210
+26;MVZ215;IV;Embriología Veterinaria;0;2;2;4;3;MVZ205
+27;MVZ216;IV;Bioestadística Experimental;0;2;2;4;3;MVZ211
+28;MVZ2018;V;Patología Veterinaria General;0;3;2;5;4;MVZ212
+29;MVZ2019;V;Tópicos en Salud Pública;0;2;2;4;3;NINGUNO
+30;MVZ217;V;Diagnóstico Clínico Veterinario I;0;2;2;4;3;4
+31;MVZ220;V;Metodología de la Investigación;0;3;0;3;3;MVZ216
+32;MVZ221;V;Enfermedades Infecciosas;0;2;2;4;3;MVZ214
+33;MVZ222;V;Genética;0;2;2;4;3;MVZ215
+34;MVZ301;V;Tecnología de Fibras y Pieles Animales;0;2;2;4;3;MVZ201
+35;MVZ302;V;Proyectos Empresariales I;0;1;2;3;2;NINGUNO
+36;MVZ223;VI;Farmacología y Terapéutica Veterinaria I;0;3;2;5;4;MVZ212
+37;MVZ224;VI;Patología Clínica;0;2;2;4;3;MVZ217
+38;MVZ225;VI;Diagnóstico Clínico Veterinario II;0;2;2;4;3;MVZ217
+39;MVZ226;VI;Nutrición Animal Aplicada;0;3;2;5;4;MVZ206
+40;MVZ227;VI;Marketing;0;1;2;3;2;MVZ302
+41;MVZ228;VI;Estadística No Paramétrica;0;1;2;3;2;NINGUNO
+42;MVZ303;VI;Mejoramiento Genético;0;2;2;4;3;MVZ222
+43;MVZ304;VI;Planes de Inocuidad Alimentaria;0;2;2;4;3;MVZ201
+44;MVZ229;VII;Patología Veterinaria Especial;0;3;2;5;4;MVZ2018
+45;MVZ230;VII;Farmacología y Terapéutica Veterinaria II;0;3;2;5;4;MVZ223
+46;MVZ231;VII;Inglés Técnico;0;2;0;2;2;NINGUNO
+47;MVZ305;VII;Cirugía Veterinaria I;0;1;4;5;3;MVZ225
+48;MVZ306;VII;Alimentación Animal;0;3;2;5;4;MVZ226
+49;MVZ307;VII;Procesamiento de Productos Cárnicos;0;2;2;4;3;MVZ304
+50;MVZ308;VII;Proyectos Empresariales II;0;2;2;4;3;MVZ227
+51;MVZ309;VIII;Cirugía Veterinaria II;0;1;4;5;3;MVZ305
+52;MVZ310;VIII;Enfermedades Parasitarias;0;2;2;4;3;MVZ213
+53;MVZ311;VIII;Medicina Interna I;0;3;2;5;4;MVZ225
+54;MVZ312;VIII;Reproducción Animal;0;2;2;4;3;MVZ215
+55;MVZ313;VIII;Producción de Cuyes y Conejos;0;2;2;4;3;MVZ306
+56;MVZ314;VIII;Producción Avícola;0;2;2;4;3;MVZ306
+57;MVZ315;VIII;Prácticas Pre-profesionales I;0;1;4;5;3;MVZ305
+58;MVZ330;VIII;Zoonosis y Enfermedades Transmisibles;0;1;2;3;2;NINGUNO
+59;MVZ331;VIII;Truchicultura;0;1;2;3;2;NINGUNO
+60;MVZ332;VIII;Anestesiología ;0;1;2;3;2;NINGUNO
+61;MVZ333;VIII;Animales de Compañía;0;1;2;3;2;NINGUNO
+62;MVZ334;VIII;Inmunología;0;1;2;3;2;NINGUNO
+63;MVZ335;VIII;Bromatología;0;1;2;3;2;NINGUNO
+64;MVZ336;VIII;Imagenología;0;1;2;3;2;NINGUNO
+65;MVZ337;VIII;Enfermedades de Aves;0;1;2;3;2;NINGUNO
+66;MVZ232;IX;Producción de Manejo de Pastos y Forrajes;0;2;2;4;3;MVZ312
+67;MVZ317;IX;Biotecnología de la Reproducción Animal;0;2;2;4;3;MVZ312
+68;MVZ318;IX;Procesamiento de Productos Lácteos;0;2;2;4;3;MVZ304
+69;MVZ319;IX;Medicina Interna II;0;3;2;5;4;MVZ311
+70;MVZ320;IX;Prácticas Pre-profesionales II;0;1;4;5;3;MVZ315
+71;MVZ321;IX;Producción de Ovinos;0;2;2;4;3;MVZ306
+72;MVZ322;IX;Producción de Porcinos;0;2;2;4;3;MVZ306
+73;MVZ338;IX;Ganadería Tropical;0;1;2;3;2;NINGUNO
+74;MVZ339;IX;Juzgamiento de Ganado;0;1;2;3;2;NINGUNO
+75;MVZ340;IX;Producción de Ganado de Leche;0;1;2;3;2;NINGUNO
+76;MVZ341;IX;Producción de Ganado de Carne;0;1;2;3;2;NINGUNO
+77;MVZ323;X;Taller de Investigación Aplicada;0;2;2;4;3;MVZ220
+78;MVZ324;X;Epidemiología Veterinaria;0;2;2;4;3;MVZ310
+79;MVZ325;X;Gestión de Empresas;0;2;2;4;3;MVZ308
+80;MVZ326;X;Producción de Camélidos Sudamericanos Domésticos;0;2;2;4;3;MVZ306
+81;MVZ327;X;Ginecología y Obstetricia Veterinaria;0;1;4;5;3;MVZ315
+82;MVZ328;X;Producción de Bovinos;0;2;2;4;3;MVZ306
+83;MVZ329;X;Prácticas Pre-profesionales III;0;2;4;6;4;MVZ320
+84;MVZ342;X;Nutrición y Alimentación de Rumiantes;0;1;2;3;2;NINGUNO
+85;MVZ343;X;Relaciones Sociales y Extensión Rural;0;1;2;3;2;NINGUNO
+86;MVZ344;X;Nutrición y Alimentación de no Rumiantes;0;1;2;3;2;NINGUNO
+87;MVZ345;X;Producción y Enfermedades de Equinos;0;1;2;3;2;NINGUNO
