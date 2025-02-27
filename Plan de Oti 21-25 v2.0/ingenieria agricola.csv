@@ -1,0 +1,69 @@
+﻿N;CICLO;CODIGO;CURSO;ESP;HT;HP;TH;CRD;REQUE
+1;I;EG101;COMPRENSIÓN Y ARGUMENTACIÓN;0;3;2;5;4;NINGUNO
+2;I;EG102;Pensamiento racional y ética;0;2;2;4;3;NINGUNO
+3;I;EG103;Matemática básica;0;3;2;5;4;NINGUNO
+4;I;EG104;Taller de innovación y emprendimiento;0;2;2;4;3;NINGUNO
+5;I;EG105;Ecología y desarrollo sostenible;0;2;2;4;3;NINGUNO
+6;I;EG112;Física I;0;3;2;5;4;NINGUNO
+7;I;IAG201;Introducción a la Ingeniería Agrícola;0;1;2;3;2;NINGUNO
+8;II;IAG203;Dibujo para Ingeniería;0;2;2;4;3;NINGUNO
+9;II;EG108;Química general;0;3;2;5;4;NINGUNO
+10;II;EG111;Cálculo Diferencial;0;3;2;5;4;EG103
+11;II;EG119;Seguridad y defensa nacional;0;2;2;4;3;NINGUNO
+12;II;HUM205;Inglés;0;1;2;3;2;NINGUNO
+13;II;IAG204;Geología para obras hidráulicas;0;2;2;4;3;NINGUNO
+14;II;IAG208;Física II;0;3;2;5;4;EG112
+15;III;IAG202;Cálculo Integral;0;3;2;5;4;EG111
+16;III;IAG209;Topografía I;0;3;2;5;4;IAG203
+17;III;IAG213;Sistema de Información Geográfica y Teledetección;0;3;2;5;4;IAG201
+18;III;EG110;Estadística;0;3;2;5;4;NINGUNO
+19;III;IAG206;Estática;0;3;2;5;4;IAG208
+20;III;IAG210;Materiales y Procedimientos de la Construcción;0;3;2;5;4;IAG204
+21;IV;IAG207;Cálculo Avanzado;0;3;2;5;4;IAG202
+22;IV;IAG211;Dinámica;0;2;2;4;3;IAG206
+23;IV;IAG212;Métodos Numéricos;0;2;2;4;3;IAG202
+24;IV;IAG214;Meteorología y Climatología;0;2;2;4;3;EG105
+25;IV;IAG215;Topografía II;0;3;2;5;4;IAG209
+26;IV;IAG216;Lenguaje de Programación;0;2;2;4;3;IAG213
+27;IV;IAG217;Tecnología del Concreto;0;3;2;5;3;IAG210
+28;V;IAG218;Resistencia de Materiales;0;3;2;5;4;IAG206
+29;V;IAG219;Hidrología General;0;3;2;5;4;IAG214
+30;V;IAG220;Mecánica de Suelos I;0;3;2;5;4;IAG204
+31;V;IAG221;Mecánica de Fluidos;0;3;2;5;4;IAG206
+32;V;IAG222;Mecanización Agrícola;0;3;2;5;4;IAG215
+33;V;IAG223;Edafología y Agrotecnia;0;3;2;5;4;IAG204
+34;VI;IAG224;Análisis Estructural;0;3;2;5;4;IAG218
+35;VI;IAG225;Hidráulica I;0;3;2;5;4;IAG221
+36;VI;IAG226;Mecánica de Suelos II;0;3;2;5;4;IAG220
+37;VI;IAG301;Ingeniería de Riegos I;0;3;2;5;4;IAG223
+38;VI;IAG302;Hidrología Aplicada;0;3;2;5;4;IAG219
+39;VI;IAG303;Maquinaria para Obras;0;3;2;5;4;IAG222
+40;VII;IAG227;Concreto Armado;0;13;10;23;4;IAG224
+41;VII;IAG304;Hidráulica Fluvial;0;2;2;4;3;IAG225
+42;VII;IAG305;Ingeniería de Riegos II;0;3;2;5;4;IAG301
+43;VII;IAG306;Gestión de Cuencas Hidrográficas;0;2;2;4;3;IAG219
+44;VII;IAG307;Diseño Rural;0;2;2;4;3;IAG224
+45;VII;IAG308;Monitoreo de la Calidad del Agua;0;2;2;4;3;IAG302
+46;VII;IAG309;Hidráulica II;0;2;2;4;3;IAG225
+47;VIII;IAG310;Hidrogeología;0;3;2;5;4;IAG219
+48;VIII;IAG311;Ingeniería de drenaje;0;3;2;5;4;IAG305
+49;VIII;IAG312;Taller de Investigación I;0;3;2;5;4;EG110
+50;VIII;IAG313;Diseño de estructuras Hidráulicas I;0;3;2;5;4;IAG304
+51;VIII;IAG314;Costos, Presupuesto y Programación;0;3;2;5;4;IAG303
+52;VIII;IAG315;Abastecimiento de Agua Potable y Alcantarillado;0;3;2;5;4;IAG309
+53;IX;IAG316;Diseño de Presas;0;2;2;4;3;IAG313
+54;IX;IAG317;Formulación y evaluación de proyectos;0;3;2;5;4;IAG314
+55;IX;IAG318;Ordenamiento Territorial;0;2;2;4;3;IAG306
+56;IX;IAG319;Evaluación del Impacto Ambiental;0;3;2;5;4;IAG308
+57;IX;IAG320;Diseño de Estructuras Hidráulicas II;0;2;2;4;3;IAG313
+58;IX;IAG321;Residencia y Supervisión de Obras;0;2;2;4;3;IAG314
+59;IX;IAG322;Taller de Investigación II;0;2;2;4;3;IAG312
+60;X;IAG323;Taller de Investigación III;0;2;2;4;3;IAG322
+61;X;IAG324;Gestión de Recursos Hídricos;0;2;2;4;3;IAG305
+62;X;IAG325;Practicas Pre-Profesionales;0;0;4;4;2;200
+63;X;IAG326;Proyectos de Irrigación;0;2;2;4;3;IAG317
+64;X;IAG327;Administración y Legislación de Obras;0;2;2;4;3;IAG314
+65;X;IAG328;Caminos Rurales;0;2;2;4;3;IAG307
+66;X;IAG329;Administración de Sistemas Hidráulicos;0;2;2;4;3;IAG313
+67;X;IAG330;Aprovechamiento de Energías Renovables;0;2;2;4;3;IAG305
+68;X;IAG331;Gestión de Riesgos de Desastres;0;2;2;4;3;IAG306

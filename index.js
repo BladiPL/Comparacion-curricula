@@ -9,7 +9,7 @@ const csv = require('csv-parser');
 const app = express();
 app.use(cors());
 
-const API_URL = 'http://api-gestioncurricular-pregrado.unap.edu.pe/cursos_carga?prog=34';
+const API_URL = 'http://api-gestioncurricular-pregrado.unap.edu.pe/cursos_carga?prog=10';
 
 
 app.get('/compare-curriculas', async (req, res) => {
@@ -17,8 +17,8 @@ app.get('/compare-curriculas', async (req, res) => {
         const response = await axios.get(API_URL);
         const data = response.data;
 
-        const version1 = data.filter(item => item.version_currciula === 3);
-        const version3 = data.filter(item => item.version_currciula === 4);
+        const version1 = data.filter(item => item.version_currciula === 1);
+        const version3 = data.filter(item => item.version_currciula === 2);
         if (!version1.length || !version3.length) {
             return res.status(404).json({ error: 'Una o ambas versiones curriculares no se encontraron' });
         }
@@ -33,14 +33,14 @@ app.get('/compare-curriculas', async (req, res) => {
 });
 
 // Endpoint para convertir CSV a JSON y comparar con la versión de la API
-app.get('/convert-csv', async (req, res) => {
-    const archivo = 'nutricion humana';
-    const csvFilePath = path.join(__dirname, './Plan de Oti 21-25', `${archivo}.csv`);
-    //const csvFilePath2 = path.join(__dirname, './Plan de Oti/', `${archivo}_c1.csv`);
+app.get('/compare-c1', async (req, res) => {
+    const archivo = 'ingenieria de minas';
+    const csvFilePath = path.join(__dirname, './Plan de Oti 21-25 v2.0/', `${archivo}.csv`);
+    const csvFilePath2 = path.join(__dirname, './Plan de Oti 21-25 v2.0/', `${archivo}_c1.csv`);
     try {
         // Convertir CSV a JSON
         const version3 = await convertCsvToJson(csvFilePath);
-        //const version2 = await convertCsvToJson(csvFilePath2);
+        const version2 = await convertCsvToJson(csvFilePath2);
 
         // Obtener datos de la API
         const response = await axios.get(API_URL);
@@ -48,16 +48,16 @@ app.get('/convert-csv', async (req, res) => {
 
         // Filtrar la versión 1 del currículum
 
-        const version1 = data.filter(item => item.version_currciula === 1);
+        //const version1 = data.filter(item => item.version_currciula === 1);
         //const version1 = data.filter(item => item.version_currciula === 4);
-        //const version1 = data.filter(item => item.version_currciula === 3);
+        const version1 = data.filter(item => item.version_currciula === 2);
         if (!version1.length || !version3.length) {
             return res.status(404).json({ error: 'Una o ambas versiones curriculares no se encontraron' });
         }
 
         // Comparar las versiones
-        //const differences = diferencias2(version1,version2, version3);
-        const differences = diferencias(version1,version3)
+        const differences = diferencias2(version1,version2, version3);
+        //const differences = diferencias(version1,version3)
         res.json(differences);
 
     } catch (error) {
@@ -209,7 +209,7 @@ function findDifferences(version1, version3) {
                 hv3: curso3.curso_hvir,
                 pre3: curso3.curso_pre,
 
-                result: 'Solo en versión 4'
+                result: 'Solo en version 2.0'
             });
         }
     });
@@ -238,7 +238,7 @@ function findDifferences(version1, version3) {
             hv3: '',
             pre3: '',
 
-            result: 'Solo en versión 3'
+            result: 'Solo en version 1'
         });
     });
 
@@ -553,11 +553,12 @@ function diferencias2(gestion, oti, c1) {
         // Crear Sets para comparar prerrequisitos
         const pre1NamesSet = new Set(pre1Names);
         const pre2NamesSet = new Set(pre2Names);
-
+        
         // Comparar campos entre los tres conjuntos de datos
         if (!curso2 || !curso3) {
             differences.push('Falta en una versión');
         } else {
+            if (curso1.curso_codigo !== curso2.curso_codigo) differences.push('Codigo')
             if (curso1.curso_ht !== curso2.curso_ht || curso1.curso_ht !== curso3.curso_ht) differences.push('HT');
             if (curso1.curso_hp !== curso2.curso_hp || curso1.curso_hp !== curso3.curso_hp) differences.push('HP');
             if (curso1.curso_totalh !== curso2.curso_totalh || curso1.curso_totalh !== curso3.curso_totalh) differences.push('TotalH');

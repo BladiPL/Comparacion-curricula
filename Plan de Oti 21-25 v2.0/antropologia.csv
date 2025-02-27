@@ -1,0 +1,58 @@
+﻿N;CICLO;CODIGO;CURSO;ESP;HT;HP;TH;CRD;REQUE
+1;I;ANT201;Introducción a la antropología;0;4;2;6;5;NINGUNO
+2;I;EG101;Comprensión y argumentación;0;3;2;5;4;NINGUNO
+3;I;EG102;Pensamiento racional y ética;0;2;2;4;3;NINGUNO
+4;I;EG103;Matemática básica;0;3;2;5;4;NINGUNO
+5;I;EG104;Taller de innovación y emprendimiento;0;2;2;4;3;NINGUNO
+6;I;EG105;Ecología y desarrollo sostenible;0;2;2;4;3;NINGUNO
+7;II;ANT202;Antropología Visual;0;4;2;6;5;NINGUNO
+8;II;ANT203;Idiomas Nativos quechua;0;3;2;5;4;NINGUNO
+9;II;ANT204;Idioma nativo aymara;0;3;2;5;4;NINGUNO
+10;II;ANT205;Estudios Amazónicos;0;3;2;5;4;NINGUNO
+11;II;EG114;Estrategias de aprendizaje;0;2;2;4;3;NINGUNO
+12;II;EG119;Seguridad y defensa Nacional;0;2;2;4;3;NINGUNO
+13;II;EG120;Geohistoria regional;0;2;2;4;3;NINGUNO
+14;III;ANT206;Teoría social;0;4;2;6;5;NINGUNO
+15;III;ANT207;Antropología de la Religión;0;3;2;5;4;NINGUNO
+16;III;ANT301;Cultura andina y saberes ancestrales;0;3;2;5;4;NINGUNO
+17;III;ANT302;Teorías del desarrollo Social;0;4;2;6;5;NINGUNO
+18;III;EG107;Epistemología;0;2;2;4;3;NINGUNO
+19;III;EG115;Desarrollo personal;0;2;2;4;3;NINGUNO
+20;IV;ANT208;Introducción a la investigación antropológica;0;4;2;6;5;NINGUNO
+21;IV;ANT209;Teorías Antropológicas I;0;3;2;5;4;ANT206
+22;IV;ANT210;Antropología Jurídica;0;2;2;4;3;NINGUNO
+23;IV;ANT303;Introducción a la antropología biológica;0;4;2;6;5;NINGUNO
+24;IV;ANT304;Políticas sociales;0;3;2;5;4;ANT302
+25;IV;EG118;Identidad y diversidad cultural;0;2;2;4;3;NINGUNO
+26;V;ANT211;Etnografía;0;3;2;5;4;NINGUNO
+27;V;ANT212;Teorías Antropológicas II;0;3;2;5;4;ANT209
+28;V;ANT305;Antropología medioambiental;0;3;2;5;4;NINGUNO
+29;V;ANT306;Fundamentos de bioantropología forense;0;4;2;6;5;ANT303
+30;V;ANT307;Desarrollo territorial y cultura;0;2;2;4;3;NINGUNO
+31;V;ANT308;Antropología aplicada;0;3;2;5;4;NINGUNO
+32;VI;ANT213;Metodología de la investigación cualitativa;0;2;4;6;4;ANT208
+33;VI;ANT214;Teorías Antropológicas III;0;3;2;5;4;ANT212
+34;VI;ANT309;Teorías y análisis de la cultura;0;3;2;5;4;NINGUNO
+35;VI;ANT310;Derechos de los pueblos originarios;0;2;2;4;3;NINGUNO
+36;VI;ANT311;Formulación de proyectos sociales;0;3;2;5;4;NINGUNO
+37;VI;ANT312;Planificación del desarrollo;0;3;2;5;4;NINGUNO
+38;VII;ANT215;Metodología de la Investigación Cuantitativa;0;3;2;5;4;NINGUNO
+39;VII;ANT216;Antropología Peruana;0;3;2;5;4;NINGUNO
+40;VII;ANT217;Procesos interculturales;0;3;2;5;4;NINGUNO
+41;VII;ANT313;Gestión cultural;0;3;2;5;4;ANT309
+42;VII;ANT314;Gestión de programas y proyectos sociales;0;3;2;5;4;ANT311
+43;VII;ANT315;Metodologías de facilitación participativa;0;3;2;5;4;NINGUNO
+44;VIII;ANT218;Metodología de la investigación antropológica;0;3;2;5;4;ANT213
+45;VIII;ANT219;Antropología Urbana y globalización;0;3;2;5;4;NINGUNO
+46;VIII;ANT220;Antropología de la Minería y Extractivismo;0;3;2;5;4;NINGUNO
+47;VIII;ANT316;Taller del patrimonio cultural;0;3;2;5;4;ANT313
+48;VIII;ANT317;Bioantropología aplicada;0;3;2;5;4;ANT306
+49;VIII;ANT318;Monitoreo y evaluación de programas sociales;0;3;2;5;4;NINGUNO
+50;IX;ANT221;Seminario de Producción intelectual;0;3;2;5;4;NINGUNO
+51;IX;ANT222;Antropología de la Salud;0;3;2;5;4;NINGUNO
+52;IX;ANT223;Antropología del parentesco, género y sexualidad;0;3;2;5;4;NINGUNO
+53;IX;ANT319;Cultura y clima organizacional;0;3;2;5;4;NINGUNO
+54;IX;ANT320;Fundamentos de la Antropología cultural forense;0;3;2;5;4;ANT317
+55;IX;ANT321;Sistematización de experiencias de desarrollo;0;3;2;5;4;NINGUNO
+56;X;ANT224;seminario de Tesis;0;2;4;6;4;ANT218
+57;X;ANT322;Prácticas pre profesionales;0;8;24;32;20;ANT321

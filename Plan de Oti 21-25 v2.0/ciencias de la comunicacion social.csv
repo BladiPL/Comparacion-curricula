@@ -1,0 +1,62 @@
+﻿N;CICLO;CODIGO;CURSO;ESP;HT;HP;TH;CRD;REQUE
+1;I;COS201;Introducción a las ciencias de la comunicación;00;4.0;2.0;6.0;5.0;NINGUNO
+2;I;EG101;Comprensión y Argumentación;00;3.0;2.0;5.0;4.0;NINGUNO
+3;I;EG102;Pensamiento racional y ética;00;2.0;2.0;4.0;3.0;NINGUNO
+4;I;EG103;Matemática básica;00;3.0;2.0;5.0;4.0;NINGUNO
+5;I;EG104;Taller de innovación y emprendimiento;00;2.0;2.0;4.0;3.0;NINGUNO
+6;I;EG105;Ecología y desarrollo sostenible;00;2.0;2.0;4.0;3.0;NINGUNO
+7;II;COS202;Comunicación intercultural;00;2.0;2.0;4.0;3.0;NINGUNO
+8;II;COS203;Creatividad en comunicación;00;2.0;2.0;4.0;3.0;NINGUNO
+9;II;COS204;Taller de expresión oral;00;1.0;4.0;5.0;3.0;NINGUNO
+10;II;COS301;Lenguaje de los medios;00;3.0;2.0;5.0;4.0;NINGUNO
+11;II;EG106;Producción de textos académicos;00;2.0;2.0;4.0;3.0;NINGUNO
+12;II;EG114;Estrategias de aprendizaje;00;2.0;2.0;4.0;3.0;NINGUNO
+13;II;EG115;Desarrollo personal;00;2.0;2.0;4.0;3.0;NINGUNO
+14;III;COS205;Teorías de la comunicación;00;3.0;2.0;5.0;4.0;NINGUNO
+15;III;COS302;Fotografía;00;4.0;2.0;6.0;5.0;NINGUNO
+16;III;COS303;Fundamentos de marketing;00;2.0;2.0;4.0;3.0;NINGUNO
+17;III;COS304;Taller de redacción periodística I;00;2.0;4.0;6.0;4.0;NINGUNO
+18;III;EG118;Identidad y diversidad cultural;00;2.0;2.0;4.0;3.0;NINGUNO
+19;III;EG119;Seguridad y defensa nacional;00;2.0;2.0;4.0;3.0;NINGUNO
+20;IV;COS305;Taller de producción fotográfica;00;2.0;4.0;6.0;4.0;NINGUNO
+21;IV;COS306;Diseño gráfico;00;3.0;2.0;5.0;4.0;NINGUNO
+22;IV;COS307;Investigación de mercados;00;2.0;2.0;4.0;3.0;NINGUNO
+23;IV;COS308;Comunicación y relaciones humanas;00;2.0;2.0;4.0;3.0;NINGUNO
+24;IV;COS309;Taller de redacción periodística II;00;2.0;4.0;6.0;4.0;COS304
+25;IV;EG110;Estadística;00;3.0;2.0;5.0;4.0;NINGUNO
+26;V;COS206;Diagnóstico de la comunicación;00;3.0;2.0;5.0;4.0;NINGUNO
+27;V;COS310;Taller de diseño gráfico;00;3.0;2.0;5.0;4.0;NINGUNO
+28;V;COS311;Producción en audio;00;3.0;2.0;5.0;4.0;NINGUNO
+29;V;COS312;Dirección de marketing estratégico;00;3.0;2.0;5.0;4.0;COS303
+30;V;COS313;Teorías y modelos de la comunicación para el desarrollo;00;3.0;2.0;5.0;4.0;NINGUNO
+31;V;COS314;Comunicación en las organizaciones;00;3.0;2.0;5.0;4.0;NINGUNO
+32;VI;COS207;Gestión de empresas comunicacionales ;00;2.0;2.0;4.0;3.0;NINGUNO
+33;VI;COS208;Análisis y crítica de cine ;00;2.0;2.0;4.0;3.0;NINGUNO
+34;VI;COS209;Metodología de la investigación científica;00;3.0;2.0;5.0;4.0;NINGUNO
+35;VI;COS315;Taller de producción en audio;00;2.0;4.0;6.0;4.0;NINGUNO
+36;VI;COS316;Marketing digital;00;2.0;2.0;4.0;3.0;NINGUNO
+37;VI;COS317;Estrategias de comunicación para el desarrollo;00;3.0;2.0;5.0;4.0;COS313
+38;VI;COS318;Taller de periodismo;00;2.0;4.0;6.0;4.0;NINGUNO
+39;VII;COS210;Comunicación, Estado y Ciudadanía;00;3.0;2.0;5.0;4.0;NINGUNO
+40;VII;COS211;Métodos y técnicas de investigación en comunicación;00;3.0;2.0;5.0;4.0;NINGUNO
+41;VII;COS319;Producción audiovisual;00;4.0;2.0;6.0;5.0;NINGUNO
+42;VII;COS320;Marketing social y político;00;2.0;2.0;4.0;3.0;NINGUNO
+43;VII;COS321;Taller de campañas sociales;00;3.0;2.0;5.0;4.0;NINGUNO
+44;VII;COS322;Planificación de la comunicación Organizacional;00;3.0;2.0;5.0;4.0;NINGUNO
+45;VIII;COS212;Taller de proyectos de investigación en comunicación;00;2.0;4.0;6.0;4.0;NINGUNO
+46;VIII;COS323;Taller de producción audiovisual;00;2.0;4.0;6.0;4.0;COS319
+47;VIII;COS324;Comunicación publicitaria;00;2.0;2.0;4.0;3.0;NINGUNO
+48;VIII;COS325;Relaciones comunitarias y resolución de conflictos;00;2.0;2.0;4.0;3.0;NINGUNO
+49;VIII;COS326;Eventos y protocolo institucional;00;3.0;2.0;5.0;4.0;NINGUNO
+50;VIII;COS327;Periodismo multimedia;00;3.0;2.0;5.0;4.0;NINGUNO
+51;IX;COS213;Opinión pública;00;2.0;2.0;4.0;3.0;NINGUNO
+52;IX;COS214;Deontología y legislación de la comunicación;00;2.0;2.0;4.0;3.0;NINGUNO
+53;IX;COS328;Taller de comunidades virtuales;00;2.0;4.0;6.0;4.0;NINGUNO
+54;IX;COS329;Taller de Comunicación publicitaria;00;2.0;4.0;6.0;4.0;NINGUNO
+55;IX;COS330;Proyectos de comunicación para el desarrollo;00;2.0;2.0;4.0;3.0;NINGUNO
+56;IX;COS331;Taller de comunicación organizacional;00;2.0;4.0;6.0;4.0;COS322
+57;X;COS215;Seminario de tesis;00;3.0;2.0;5.0;4.0;NINGUNO
+58;X;COS332;Evaluación y sistematización de proyectos;00;2.0;2.0;4.0;3.0;NINGUNO
+59;X;COS333;Prácticas pre-profesionales en comunicación social;00;2.0;4.0;6.0;4.0;NINGUNO
+60;X;HUM216;Idioma nativo quechua ;00;2.0;2.0;4.0;3.0;NINGUNO
+61;X;HUM217;Idioma nativo aymara ;00;2.0;2.0;4.0;3.0;NINGUNO

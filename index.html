@@ -114,15 +114,15 @@
 </head>
 
 <body>
-    <h1 style="text-align: center;">Comparación Planes de Estudio <br> Diseño Curricular 2021 - 2025</h1>
+    <h1 style="text-align: center;">Comparación Planes de Estudio <br> Diseño Curricular 2021 - 2025 V2.0</h1>
     <div id="result">
-        <h2 style="text-align: center;">Programa de estudios <br> NUTRICION HUMANA </h2>
+        <h2 style="text-align: center;">Programa de estudios <br> INGENIERIA DE MINAS </h2>
         <button onclick="compareCurriculas()">Comparar Curriculas</button>
         <button onclick="compareWithOTI()">Comparar con OTI</button>
         <h3 class="dual-header">
-            <div class="left">GESTION CURRICULAR</div>
-            <div class="medium">SISTEMA ACADEMICO OTI</div>
-            <!--<div class="right">FORMATO C1 - SUNEDU</div>-->
+            <div class="left">SISTEMA GESTIOON CURRICULAR</div>
+            <div class="medium">SISTEMA ACADEMICO OTI </div>
+            <div class="right">FORMATO C1 - 2021-2025</div>
         </h3>
         <table id="comparison-table">
             <thead>
@@ -139,7 +139,7 @@
                     <th>Prerrequisitos</th>
 
                     <th class="border-left">Ciclo</th>
-                    <th>Área Curricular</th>
+                    <!-- <th>Área Curricular</th> -->
                     <th>Código</th>
                     <th>Curso</th>
                     <th>HT</th>
@@ -147,14 +147,14 @@
                     <th>TH</th>
                     <th>Créditos</th>
                     <th>Prerrequisitos</th>
-<!--
+
                     <th class="border-left">Ciclo</th>
                     <th>Curso</th>
                     <th>HT</th>
                     <th>HP</th>
                     <th>TH</th>
                     <th>Créditos</th>
--->
+
                     <th class="border-left border-right">Resultado</th>
                 </tr>
             </thead>
@@ -176,7 +176,7 @@
         }
 
         async function compareWithOTI() {
-            const response = await fetch('http://localhost:3000/convert-csv');
+            const response = await fetch('http://localhost:3000/compare-c1');
             const data = await response.json();
 
             if (response.ok) {
@@ -206,23 +206,22 @@
                     <td>${curso.hv1 || ''}</td>
                     <td>${curso.pre1 || ''}</td>
 
+                    <td class="border-left">${curso.ciclo2 || ''}</td>
+                    <!-- <td>${curso.areac2}</td> -->
+                    <td>${curso.codigo2 || ''}</td>
+                    <td>${curso.nombre2 || ''}</td>
+                    <td>${curso.ht2 || ''}</td>
+                    <td>${curso.hp2 || ''}</td>
+                    <td>${curso.th2 || ''}</td>
+                    <td>${curso.creditos2 || ''}</td>
+                    <td>${curso.pre2 || ''}</td>
+
                     <td class="border-left">${curso.ciclo3 || ''}</td>
-                    <td>${curso.areac3}</td>
-                    <td>${curso.codigo3 || ''}</td>
                     <td>${curso.nombre3 || ''}</td>
                     <td>${curso.ht3 || ''}</td>
                     <td>${curso.hp3 || ''}</td>
                     <td>${curso.th3 || ''}</td>
                     <td>${curso.creditos3 || ''}</td>
-                    <td>${curso.pre3 || ''}</td>
-                    <!--
-                    <td class="border-left">${curso.ciclo3 || ''}</td>
-                    <td>${curso.nombre3 || ''}</td>
-                    <td>${curso.ht3 || ''}</td>
-                    <td>${curso.hp3 || ''}</td>
-                    <td>${curso.th3 || ''}</td>
-                    <td>${curso.creditos3 || ''}</td>
-                    -->
         
                     <td class="border-left border-right result-cell">${curso.result}</td>
                 `;
