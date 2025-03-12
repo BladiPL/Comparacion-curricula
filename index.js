@@ -9,7 +9,7 @@ const csv = require('csv-parser');
 const app = express();
 app.use(cors());
 
-const API_URL = 'http://api-gestioncurricular-pregrado.unap.edu.pe/cursos_carga?prog=10';
+const API_URL = 'http://api-gestioncurricular-pregrado.unap.edu.pe/cursos_carga?prog=22';
 
 
 app.get('/compare-curriculas', async (req, res) => {
@@ -34,7 +34,7 @@ app.get('/compare-curriculas', async (req, res) => {
 
 // Endpoint para convertir CSV a JSON y comparar con la versión de la API
 app.get('/compare-c1', async (req, res) => {
-    const archivo = 'ingenieria de minas';
+    const archivo = 'biologia pesqueria';
     const csvFilePath = path.join(__dirname, './Plan de Oti 21-25 v2.0/', `${archivo}.csv`);
     const csvFilePath2 = path.join(__dirname, './Plan de Oti 21-25 v2.0/', `${archivo}_c1.csv`);
     try {
