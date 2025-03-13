@@ -9,7 +9,7 @@ const csv = require('csv-parser');
 const app = express();
 app.use(cors());
 
-const API_URL = 'http://api-gestioncurricular-pregrado.unap.edu.pe/cursos_carga?prog=22';
+const API_URL = 'http://api-gestioncurricular-pregrado.unap.edu.pe/cursos_carga?prog=6';
 
 
 app.get('/compare-curriculas', async (req, res) => {
@@ -34,9 +34,9 @@ app.get('/compare-curriculas', async (req, res) => {
 
 // Endpoint para convertir CSV a JSON y comparar con la versión de la API
 app.get('/compare-c1', async (req, res) => {
-    const archivo = 'biologia pesqueria';
-    const csvFilePath = path.join(__dirname, './Plan de Oti 21-25 v2.0/', `${archivo}.csv`);
-    const csvFilePath2 = path.join(__dirname, './Plan de Oti 21-25 v2.0/', `${archivo}_c1.csv`);
+    const archivo = 'ciencias contables';
+    const csvFilePath = path.join(__dirname, './recibido 2015-2019/', `${archivo}.csv`);
+    const csvFilePath2 = path.join(__dirname, './recibido 2015-2019/', `${archivo}_c1.csv`);
     try {
         // Convertir CSV a JSON
         const version3 = await convertCsvToJson(csvFilePath);
@@ -49,8 +49,8 @@ app.get('/compare-c1', async (req, res) => {
         // Filtrar la versión 1 del currículum
 
         //const version1 = data.filter(item => item.version_currciula === 1);
-        //const version1 = data.filter(item => item.version_currciula === 4);
-        const version1 = data.filter(item => item.version_currciula === 2);
+        const version1 = data.filter(item => item.version_currciula === 4);
+        //const version1 = data.filter(item => item.version_currciula === 2);
         if (!version1.length || !version3.length) {
             return res.status(404).json({ error: 'Una o ambas versiones curriculares no se encontraron' });
         }
