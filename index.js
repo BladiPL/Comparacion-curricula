@@ -10,10 +10,14 @@ const app = express();
 app.use(cors());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const API_URL = 'http://api-gestioncurricular-pregrado.unap.edu.pe/cursos_carga?prog=6';
 =======
 const API_URL = 'http://api-gestioncurricular-pregrado.unap.edu.pe/cursos_carga?prog=20';
 >>>>>>> f0bb63a (luis)
+=======
+const API_URL = 'http://api-gestioncurricular-pregrado.unap.edu.pe/cursos_carga?prog=27';
+>>>>>>> a167d62 (luis)
 
 
 app.get('/compare-curriculas', async (req, res) => {
@@ -39,11 +43,15 @@ app.get('/compare-curriculas', async (req, res) => {
 // Endpoint para convertir CSV a JSON y comparar con la versión de la API
 app.get('/compare-c1', async (req, res) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
     const archivo = 'ciencias contables';
     const csvFilePath = path.join(__dirname, './recibido 2015-2019/', `${archivo}.csv`);
     const csvFilePath2 = path.join(__dirname, './recibido 2015-2019/', `${archivo}_c1.csv`);
 =======
     const archivo = 'biologia ecologia';
+=======
+    const archivo = 'educacion primaria';
+>>>>>>> a167d62 (luis)
     const csvFilePath = path.join(__dirname, './Plan de Oti 21-25 v2.0/', `${archivo}.csv`);
     const csvFilePath2 = path.join(__dirname, './Plan de Oti 21-25 v2.0/', `${archivo}_c1.csv`);
 >>>>>>> f0bb63a (luis)
